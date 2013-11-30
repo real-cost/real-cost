@@ -37,7 +37,10 @@ var fixPrice = function() {
  */
 var setPrice = function(value, elt, details) {
     var newValue = value * details.mult;
-    elt.innerHTML = value + " <a style='text-decoration: underline' href='" + details.link + "'>" + details.text + "</a>";
+    elt.innerHTML = newValue +
+	" <a style='text-decoration: underline' href='" +
+	details.link + "'>" +
+	details.text + "</a>";
 };
 
 var fixPriceWalmart = function (details) {
